@@ -10,7 +10,7 @@ Obviously, we are looking for a fresh solution, not based on others' code.
 
 # How to install
 1. Install Go, setup GOPATH: [https://golang.org/doc/install](https://golang.org/doc/install) 
-2.  Download the solution: `go get "github.com/EastAgile/quiz`
+2.  Download the solution: `go get "github.com/EastAgile/quiz"`
 
 # How to Run
 `
