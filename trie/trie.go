@@ -1,13 +1,16 @@
 package trie
 
+// Trie struct
 type Trie struct {
 	root *Node
 }
 
+// NewTrie init
 func NewTrie() *Trie {
 	return &Trie{root: NewNode()}
 }
 
+// Add a word to trie
 func (t *Trie) Add(word string) {
 	currentNode := t.root
 
@@ -27,6 +30,7 @@ func (t *Trie) Add(word string) {
 	currentNode.End = true
 }
 
+// Has Check if a word inside a trie
 func (t *Trie) Has(word string) bool {
 	if len(word) == 0 {
 		return false
@@ -43,6 +47,7 @@ func (t *Trie) Has(word string) bool {
 	return currentNode.End
 }
 
+// PrefixesOf Get all prefixes of a word
 func (t *Trie) PrefixesOf(word string) (prefixes []string) {
 	currentNode := t.root
 	strlen := 0

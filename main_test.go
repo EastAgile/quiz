@@ -10,7 +10,7 @@ var tests = []struct {
 	want string
 }{
 	{list: []string{"a", "b", "ab", "abc", "abcd"}, want: "ab"},
-	{list: []string{"cat", "cats", "catsdogcats", "catxdogcatsrat", "dog", "dogcatsdog", "hippopotamuses", "rat", "ratcat", "ratcatdog", "ratcatdogcat"}, want: "ratcatdogcat"},
+	{list: []string{"ab", "cd"}, want: ""},
 }
 
 func TestLongestCompound(test *testing.T) {
