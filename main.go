@@ -1,14 +1,14 @@
 package main
 
 import (
-	"./queue"
-	"./trie"
 	"bufio"
 	"fmt"
+	"github.com/EastAgile/quiz/queue"
+	"github.com/EastAgile/quiz/trie"
 	"os"
 )
 
-func LongestCompound(wordList []string, t *trie.Trie) string {
+func longestCompound(wordList []string, t *trie.Trie) string {
 	var prefixes []string
 
 	q := queue.NewQueue()
@@ -82,5 +82,5 @@ func main() {
 		t.Add(word)
 	}
 
-	fmt.Printf("Longest compound word is: %s\n", LongestCompound(wordList, t))
+	fmt.Printf("Longest compound word is: %s\n", longestCompound(wordList, t))
 }
